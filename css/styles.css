@@ -516,7 +516,94 @@ img {
 .footer-social-link:focus {
   background-color: #31d0aa;
 }
+/* form subscribe */
+.subcribe-form {
+  margin-left: 80px;
+  width: 453px;
+}
+.subcribe-p {
+  margin-bottom: 16px;
 
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.subscribe-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+}
+.subscribe-input-container {
+  width: 264px;
+}
+.subscribe-input {
+  width: 100%;
+  height: 40px;
+
+  padding: 8px 16px;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+.subscribe-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+}
+.subscribe-button {
+  width: 165px;
+  display: flex;
+
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color var(--animation);
+
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  background-color: var(--accent-bg-cl);
+
+  cursor: pointer;
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--focused-bg-cl);
+}
+.subscribe-btn-p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.subscribe-btn-icon {
+  fill: #fff;
+}
 /* main-classes-end */
 
 /* portfolio-classes-start */
@@ -585,14 +672,16 @@ img {
   display: block;
   transition: box-shadow var(--animation);
 }
- .portfolio-link:hover,.portfolio-link:focus {
-    transform: translateY(0);
+.portfolio-link:hover,
+.portfolio-link:focus {
+  transform: translateY(0);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} 
-.portfolio-link:hover .portfolio-back-card-text,.portfolio-link:focus .portfolio-back-card-text {
+}
+.portfolio-link:hover .portfolio-back-card-text,
+.portfolio-link:focus .portfolio-back-card-text {
   transform: translateY(0);
-} 
+}
 
 .portfolio-card-img {
   position: relative;
