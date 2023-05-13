@@ -571,7 +571,7 @@ img {
   color: #ffffff;
 }
 .subscribe-button {
-  width: 165px;
+  min-width: 165px;
   display: flex;
 
   border: none;
@@ -756,7 +756,7 @@ img {
 
   background-color: var(--main-bg-cl);
 }
-.modal-btn {
+.modal-close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -779,8 +779,8 @@ img {
 
   cursor: pointer;
 }
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: var(--focused-bg-cl);
   border: none;
   color: #fff;
@@ -792,6 +792,59 @@ img {
 .modal-sprite-icon:hover,
 .modal-sprite-icon:focus {
   fill: #fff;
+}
+/* modal form */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 360px;
+
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+}
+.modal-form-heading{
+  margin-bottom: 16px;
+}
+.modal-fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.modal-input-container{
+
+}
+.modal-input {
+}
+.modal-form-icon {
+}
+.modal-textarea {
+}
+.modal-form-checkbox{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+ 
+  
+  letter-spacing: 0.04em;
+  
+  
+  
+  color: #8E8F99;
+  
+}
+.form-focused-text{
+  color: var(--focused-txt-cl);
+}
+.modal-form-button{
+  width: 169px;
+  display: inline-block;
+  padding: 16px 32px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
